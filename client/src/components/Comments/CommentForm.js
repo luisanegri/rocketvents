@@ -3,7 +3,6 @@ import '../../App.css';
 import { Form, Button, Col } from 'react-bootstrap';
 
 export default function CommentForm(props) {
-  console.log('comment form ', props);
   return (
     <div className="wrapper comment-form">
       <Form onSubmit={props.onSubmit}>

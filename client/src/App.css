@@ -44,7 +44,7 @@ body {
   font-family: 'montserrat';
 }
 
-.event-list .card-body {
+/* .event-list .card-body {
   background: rgba(0, 107, 166, 0.09);
   min-height: 100px;
   max-height: 100px;
@@ -52,6 +52,10 @@ body {
   padding: 29px 38px;
   width: 335px;
   box-shadow: 0 8px 10px -6px #ccc;
+} */
+
+.event-list .card-body {
+  padding: 0;
 }
 
 .event-list .row-btn {

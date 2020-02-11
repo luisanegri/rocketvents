@@ -8,9 +8,6 @@ import NavBar from './components/NavBar';
 import EventFormContainer from './components/Events/EventFormContainer';
 import EventListContainer from './components/Events/EventListContainer';
 import EventDetailContainer from './components/Events/EventDetailContainer';
-import TicketListContainer from './components/Tickets/TicketListContainer';
-import TicketFormContainer from './components/Tickets/TicketFormContainer';
-import TicketDetailContainer from './components/Tickets/TicketDetailContainer';
 import Home from './components/Home';
 
 function App() {
@@ -24,21 +21,6 @@ function App() {
         <Route exact path="/event/create" component={EventFormContainer} />
         <Route exact path="/event" component={EventListContainer} />
         <Route exact path="/event/:id" component={EventDetailContainer} />
-        <Route
-          exact
-          path="/event/:eventId/ticket"
-          component={TicketListContainer}
-        />
-        <Route
-          exact
-          path="/ticket/:ticketId"
-          component={TicketDetailContainer}
-        />
-        <Route
-          exact
-          path="/event/:eventId/ticket/create"
-          component={TicketFormContainer}
-        />
       </Switch>
     </Fragment>
   );

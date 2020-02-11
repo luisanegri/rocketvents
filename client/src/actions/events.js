@@ -12,19 +12,35 @@ function createEventSuccess(event) {
   };
 }
 
-export const createEvent = (name, description, image, start_date, end_date) => (
-  dispatch,
-  getState
-) => {
+export const createEvent = (
+  name,
+  description,
+  start_date,
+  image,
+  time,
+  price,
+  location
+) => (dispatch, getState) => {
   const state = getState();
   const jwt = state.users.jwt;
   const userId = state.users.id;
   request
     .post(`${baseUrl}/event`)
     .set('Authorization', `Bearer ${jwt}`)
-    .send({ name, description, image, start_date, end_date, userId })
+    .send({
+      name,
+      description,
+      start_date,
+      image,
+      time,
+      location,
+      price,
+      userId
+    })
     .then(response => {
+      console.log('response', response);
       const action = createEventSuccess(response.body);
+      console.log('create event action', action);
       dispatch(action);
     })
     .catch(console.error);

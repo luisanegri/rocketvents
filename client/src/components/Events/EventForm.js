@@ -8,7 +8,7 @@ export default function EventForm(props) {
       <div className="wrapper event-form">
         <h1>Create an Event</h1>
         <Form onSubmit={props.onSubmit}>
-          <Form.Group controlId="exampleForm.ControlInput1">
+          <Form.Group>
             <Form.Label>Event name</Form.Label>
             <Form.Control
               type="text"
@@ -18,7 +18,17 @@ export default function EventForm(props) {
               name="name"
             />
           </Form.Group>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Group>
+            <Form.Label>Location</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Location"
+              onChange={props.onChange}
+              value={props.value.location}
+              name="location"
+            />
+          </Form.Group>
+          <Form.Group>
             <Form.Label>Description</Form.Label>
             <Form.Control
               as="textarea"
@@ -30,7 +40,7 @@ export default function EventForm(props) {
               name="description"
             />
           </Form.Group>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Group>
             <Form.Label>Image</Form.Label>
             <Form.Control
               type="text"
@@ -41,8 +51,8 @@ export default function EventForm(props) {
             />
           </Form.Group>
           <Form.Row>
-            <Form.Group as={Col} md="3" controlId="validationFormik04">
-              <Form.Label>Start date</Form.Label>
+            <Form.Group as={Col} md="4">
+              <Form.Label>Date</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Start date"
@@ -51,13 +61,23 @@ export default function EventForm(props) {
                 onChange={props.onChange}
               />
             </Form.Group>
-            <Form.Group as={Col} md="3" controlId="validationFormik04">
-              <Form.Label>End date</Form.Label>
+            <Form.Group as={Col} md="4">
+              <Form.Label>Time</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="End date"
-                name="end_date"
-                value={props.value.end_date}
+                placeholder="Time"
+                name="time"
+                value={props.value.time}
+                onChange={props.onChange}
+              />
+            </Form.Group>
+            <Form.Group as={Col} md="4">
+              <Form.Label>Price</Form.Label>
+              <Form.Control
+                type="number"
+                placeholder="Price"
+                name="price"
+                value={props.value.price}
                 onChange={props.onChange}
               />
             </Form.Group>

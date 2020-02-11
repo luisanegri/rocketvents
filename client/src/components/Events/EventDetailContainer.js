@@ -10,14 +10,14 @@ export class EventDetailContainer extends Component {
   render() {
     return (
       <div>
-        <EventDetail event={this.props.event} tickets={this.props.tickets} />
+        <EventDetail event={this.props.event} />
       </div>
     );
   }
 }
 
 const mapStateToProps = state => {
-  return { event: state.events, tickets: state.tickets };
+  return { event: state.events };
 };
 
 const mapDispatchToProps = { readEvent };
