@@ -21,6 +21,7 @@ class SignUp extends React.Component {
       this.state.password
     );
     this.setState({ email: '', password: '', username: '' });
+    this.props.history.push('/login');
   };
 
   onChange = event => {
