@@ -3,7 +3,6 @@ import '../../App.css';
 import { Form, Button, Col, Container } from 'react-bootstrap';
 
 export default function EventForm(props) {
-  console.log('props', props);
   return (
     <Container>
       <div className="wrapper event-form">
