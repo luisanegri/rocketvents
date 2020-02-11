@@ -49,7 +49,7 @@ export class EventFormContainer extends Component {
           onChange={this.onChange}
           onSubmit={this.onSubmit}
           value={this.state}
-          user={this.state.user}
+          user={this.props.user}
         />
       </div>
     );
