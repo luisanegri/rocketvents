@@ -20,6 +20,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background: #fafafa;
+  color: #39364f;
 }
 
 .container .wrapper {
@@ -70,16 +71,18 @@ body {
 }
 
 .navigation .bg {
-  background-color: #1740da;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navigation .navbar-brand {
   font-family: 'Anton', sans-serif !important;
   letter-spacing: 1px;
+  color: #6400e4 !important;
 }
 
 .navigation .nav-link a {
-  color: #fafafa;
+  color: #6400e4;
 }
 
 .navigation .nav-link a:hover {
@@ -105,7 +108,7 @@ body {
   margin: 0 auto;
   display: block;
   margin-top: 10px;
-  background: #f03a47;
+  background: #141c3a;
   border-color: transparent;
   padding: 11px 16px;
   color: white;
@@ -116,7 +119,8 @@ body {
 .wrapper button:hover {
   border-color: transparent;
   border-color: transparent;
-  background: #1740da;
+  background: #141c3a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .wrapper button:hover a {
@@ -399,7 +403,7 @@ body {
 }
 
 .card-text-wrapper .card-text:first-child {
-  color: #95030e;
+  color: #ffc104;
 }
 
 .event-list .cards-col {
@@ -408,4 +412,64 @@ body {
 
 .event-list .card-col-right {
   padding-left: 0;
+}
+
+.event-info .row-w {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.row-badge-event .col-left {
+  padding: 0;
+}
+
+.row-badge-event .col-right {
+  background: #ffffff;
+  padding: 35px 20px;
+}
+
+.row-badge-event .col-right,
+.row-badge-event .col-left {
+  margin-top: 50px;
+}
+
+.row-badge-event .col-right p:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  font-weight: bold;
+}
+
+.row-badge-event .col-right p:nth-child(3) {
+  bottom: 0;
+  position: absolute;
+}
+
+.row-badge-bottom {
+  border: 1px solid #dbdae2;
+  padding: 10px 0;
+}
+
+.row-content .full {
+  border: 1px solid #dbdae2;
+  border-top-color: transparent;
+  padding: 50px;
+}
+
+.row-content p {
+  line-height: 2rem;
+  margin-top: 20px;
+  color: #39364f;
+}
+
+.row-content h6 {
+  margin-top: 26px;
+  font-weight: bold;
+  color: #39364f;
+}
+
+.navigation .button-signup-nav {
+  border-radius: 0;
+  border-color: transparent;
+  background: #6400e4;
+  margin-left: 10px;
 }
