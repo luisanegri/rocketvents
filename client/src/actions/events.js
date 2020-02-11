@@ -38,9 +38,7 @@ export const createEvent = (
       userId
     })
     .then(response => {
-      console.log('response', response);
       const action = createEventSuccess(response.body);
-      console.log('create event action', action);
       dispatch(action);
     })
     .catch(console.error);
