@@ -51,8 +51,10 @@ body {
 .event-list .card {
   flex-direction: row;
   border: none;
-  border: 1px solid #ccc;
   border-radius: 0;
+  width: 500px !important;
+  padding: 16px;
+  background: #f8f7fa;
 }
 
 .event-list .card:hover {
@@ -363,7 +365,8 @@ body {
 }
 
 .event-list .card-img-top {
-  max-height: 160px;
+  max-height: 130px;
+  min-height: 130px;
   width: 100%;
 }
 
@@ -380,7 +383,7 @@ body {
   font-size: 14px;
   text-transform: capitalize;
   margin-bottom: 4px;
-  width: 250px;
+  width: 210px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -399,6 +402,10 @@ body {
   color: #95030e;
 }
 
-.event-list .col {
+.event-list .cards-col {
   margin-bottom: 30px;
+}
+
+.event-list .card-col-right {
+  padding-left: 0;
 }

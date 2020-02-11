@@ -12,21 +12,27 @@ export default function EventList(props) {
         <h1>Events</h1>
         <Row>
           {props.events.map(event => (
-            <Col md={4}>
+            <Col md={6} className="cards-col">
               <Link to={`/event/${event.id}`}>
                 <Card style={{ width: '18rem' }}>
-                  <Card.Body>
-                    <Card.Img variant="top" src={event.image} />
-                    <div className="card-text-wrapper">
-                      <Card.Text>
-                        <span>{event.start_date} at </span>
-                        <span>{event.location}</span>
-                      </Card.Text>
-                      <Card.Text>{event.name}</Card.Text>
-                      <Card.Text>{event.price}</Card.Text>
-                      <Card.Text>Price €{event.time}</Card.Text>
-                    </div>
-                  </Card.Body>
+                  <Row>
+                    <Col md={6}>
+                      <Card.Img variant="top" src={event.image} />
+                    </Col>
+                    <Col md={6} className="card-col-right">
+                      <Card.Body>
+                        <div className="card-text-wrapper">
+                          <Card.Text>
+                            <span>{event.start_date} at </span>
+                            <span>{event.location}</span>
+                          </Card.Text>
+                          <Card.Text>{event.name}</Card.Text>
+                          <Card.Text>{event.price}</Card.Text>
+                          <Card.Text>Price €{event.time}</Card.Text>
+                        </div>
+                      </Card.Body>
+                    </Col>
+                  </Row>
                 </Card>
               </Link>
             </Col>
