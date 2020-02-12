@@ -58,5 +58,5 @@ The user can Sign Up and Log In to create events. The event should include infor
         
 ## Deployment
 
-Backend - Heroku
-Frontend - Netlify
+* Backend - Heroku
+* Frontend - Netlify
