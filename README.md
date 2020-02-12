@@ -16,7 +16,7 @@ The user can Sign Up and Log In to create events. The event should include infor
 * List of events
 * More info about a specific event
 
-## Other features that can be done:
+### Other features that can be done
 
 * Tickets Page
 * Edit event
@@ -42,8 +42,6 @@ The user can Sign Up and Log In to create events. The event should include infor
 * [Json Web token](https://www.npmjs.com/package/jsonwebtoken)
 
 ## Install
-
-* FRONT END
 
 1. Clone repository
 
