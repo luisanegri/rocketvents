@@ -16,6 +16,17 @@ The user can Sign Up and Log In to create events. The event should include infor
 * List of events
 * More info about a specific event
 
+## Other features that can be done:
+
+* Tickets Page
+* Edit event
+* Delete event
+
+## TODO
+
+* Add comment component to event info page
+* Hide links on navigation for logged in users
+* Make it responsive
 
 ## Technologies Used
 
@@ -30,8 +41,9 @@ The user can Sign Up and Log In to create events. The event should include infor
 * [Bcrypt](https://www.npmjs.com/package/bcrypt)
 * [Json Web token](https://www.npmjs.com/package/jsonwebtoken)
 
-
 ## Install
+
+* FRONT END
 
 1. Clone repository
 
@@ -41,10 +53,11 @@ The user can Sign Up and Log In to create events. The event should include infor
 
         npm install
         
-3. Start app
+3. Start app - FRONTEND AND BACKEND
 
-        npm run start
-
+        npm run start 
+        nodemon index.js
+        
 ## Deployment
 
 Backend - Heroku
