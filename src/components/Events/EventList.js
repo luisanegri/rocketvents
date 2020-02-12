@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card, Container, Button } from 'react-bootstrap';
+import { Row, Col, Card, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default function EventList(props) {
   const empty = !props.events.length;

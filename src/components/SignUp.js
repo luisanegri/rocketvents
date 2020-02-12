@@ -1,17 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { signup } from '../actions/signup';
-import { Button, Form, Row, Container } from 'react-bootstrap/';
+import { Button, Form, Container } from 'react-bootstrap/';
 import { Link } from 'react-router-dom';
 
 class SignUp extends React.Component {
   state = { email: '', password: '', username: '' };
-
-  // componentDidUpdate() {
-  //   if (this.props.user.length !== 0) {
-  //     this.props.history.push('/login');
-  //   }
-  // }
 
   onSubmit = event => {
     event.preventDefault();

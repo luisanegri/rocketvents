@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { login } from '../actions/login';
 import { Button, Form, Container } from 'react-bootstrap';
-import { Redirect } from 'react-router-dom';
 
 class Login extends React.Component {
   state = { email: '', password: '' };

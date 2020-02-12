@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import './App.css';
-import { Container } from 'react-bootstrap';
 import { Route, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import SignUp from './components/SignUp';

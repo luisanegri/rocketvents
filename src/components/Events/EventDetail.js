@@ -14,6 +14,7 @@ export default function EventDetail(props) {
             <img
               src={props.event.image}
               style={{ width: '100%', height: '350px' }}
+              alt="Event"
             />
           </Col>
           <Col md={3} className="col-right">
