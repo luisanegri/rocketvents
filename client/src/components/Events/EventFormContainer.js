@@ -11,7 +11,8 @@ export class EventFormContainer extends Component {
     image: '',
     price: '',
     location: '',
-    time: ''
+    time: '',
+    message: ''
   };
 
   onSubmit = event => {

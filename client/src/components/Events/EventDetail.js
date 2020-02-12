@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Row, Button, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 export default function EventDetail(props) {
   return (

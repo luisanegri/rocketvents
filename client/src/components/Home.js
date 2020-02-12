@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Img from '../people-in-concert-1763075.jpg';
+import Img from '../assorted-colors-paper-cutouts-closeup-photo-796607.jpg';
 import { Container, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -11,18 +11,13 @@ export default function Home() {
         <Container>
           <Row>
             <div class="hero-inner">
-              <h2>THE EASIEST WAY TO SELL TICKETS FOR YOUR EVENTS </h2>
+              <h2>MAKE YOUR EVENT AND SELL TICKETS</h2>
               <br></br>
-              <h2> THE MOST SECURE WAY TO BUY TICKETS</h2>
             </div>
           </Row>
           <div className="row-home-btn">
             <Link to="/signup">
               <Button className="btn-grad">Create Event</Button>
-            </Link>
-
-            <Link to="/event">
-              <Button className="btn-grad">Events</Button>
             </Link>
           </div>
         </Container>

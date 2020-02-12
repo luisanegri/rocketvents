@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../App.css';
 import { Form, Button, Col, Container } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom';
 
-export default function EventForm(props) {
+function EventForm(props) {
   return (
     <Container>
       <div className="wrapper event-form">
@@ -88,3 +89,5 @@ export default function EventForm(props) {
     </Container>
   );
 }
+
+export default withRouter(EventForm);

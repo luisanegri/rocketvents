@@ -86,8 +86,12 @@ body {
 }
 
 .navigation .nav-link a:hover {
-  color: #fafafa;
+  color: #6400e4;
   text-decoration: none;
+}
+
+.navigation .button-signup-nav:hover {
+  background: #6400e4;
 }
 
 .event-detail img {
@@ -266,16 +270,12 @@ body {
   font-family: 'montserrat';
   font-size: 13px;
   font-weight: 600;
-  background-image: linear-gradient(
-    to right,
-    #1740da 0%,
-    #47d5b8 68%,
-    #f03a47 100%
-  );
+  background: #39364f;
   border: none;
 }
-.btn-grad:hover {
+.home-wrapper .btn-grad:hover {
   background-position: right center;
+  background: rgb(78, 224, 176);
 }
 
 .signup-wrapper p {
