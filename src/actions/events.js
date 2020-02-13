@@ -4,6 +4,7 @@ export const READ_EVENTS = 'READ_EVENTS';
 export const READ_EVENT = 'READ_EVENT';
 
 const baseUrl = 'https://warm-sierra-46859.herokuapp.com';
+console.log('url', baseUrl);
 
 function createEventSuccess(event) {
   return {
@@ -39,6 +40,7 @@ export const createEvent = (
     })
     .then(response => {
       const action = createEventSuccess(response.body);
+      console.log('action', action);
       dispatch(action);
     })
     .catch(console.error);
