@@ -24,11 +24,11 @@ export default function EventList(props) {
                         <div className="card-text-wrapper">
                           <Card.Text>
                             <span>{event.start_date} at </span>
-                            <span>{event.time}</span>
+                            <span>{event.location}</span>
                           </Card.Text>
                           <Card.Text>{event.name}</Card.Text>
-                          <Card.Text>{event.location}</Card.Text>
-                          <Card.Text>Price €{event.price}</Card.Text>
+                          <Card.Text>{event.price}</Card.Text>
+                          <Card.Text>Price €{event.time}</Card.Text>
                         </div>
                       </Card.Body>
                     </Col>
