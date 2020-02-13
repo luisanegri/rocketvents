@@ -20,7 +20,7 @@ export default function EventDetail(props) {
           <Col md={3} className="col-right">
             <p>{props.event.start_date}</p>
             <p>{props.event.name}</p>
-            <p>€{props.event.time}</p>
+            <p>€{props.event.price}</p>
           </Col>
         </Row>
         <Row className="row-w row-badge-bottom">
@@ -47,16 +47,16 @@ export default function EventDetail(props) {
                 {props.event.name}
               </p>
               <span> In </span>
-              <span style={{ fontWeight: 'bold' }}> {props.event.price} </span>
+              <span style={{ fontWeight: 'bold' }}>
+                {' '}
+                {props.event.location}{' '}
+              </span>
               <span> on the </span>
               <span style={{ fontWeight: 'bold' }}>
                 {props.event.start_date}
               </span>
               <span> at </span>
-              <span style={{ fontWeight: 'bold' }}>
-                {' '}
-                {props.event.location}
-              </span>
+              <span style={{ fontWeight: 'bold' }}> {props.event.time}</span>
             </Col>
           </Row>
         </article>

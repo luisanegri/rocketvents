@@ -1,7 +1,7 @@
 import request from 'superagent';
 export const LOGIN = 'LOGIN';
 
-const baseUrl = 'http://localhost:4000';
+const baseUrl = 'https://warm-sierra-46859.herokuapp.com';
 
 function loginSuccess(user) {
   console.log(user, 'user');

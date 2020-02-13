@@ -13,7 +13,7 @@ export class NavBar extends Component {
       <div className="navigation">
         <Navbar collapseOnSelect expand="lg" className="bg">
           <Link to="/">
-            <Navbar.Brand>Rocketvents</Navbar.Brand>
+            <Navbar.Brand>Rocketevents</Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
