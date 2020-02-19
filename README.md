@@ -11,16 +11,11 @@ The user can Sign Up and Log In to create events. The event should include infor
 
 ## Features
 
-* User Authentication (Sign up and Login) and Authorisation 
+* User Authentication
+* User Authorisation - only autheticated users can create events 
 * Create Event
 * List of events
 * More info about a specific event
-
-### Other features that can be done
-
-* Tickets Page
-* Edit event
-* Delete event
 
 ## TODO
 
