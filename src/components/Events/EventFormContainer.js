@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createEvent } from '../../actions/events';
+import { addFlashMessage } from '../../actions/messages';
 import EventForm from './EventForm';
 
 export class EventFormContainer extends Component {
@@ -35,6 +36,10 @@ export class EventFormContainer extends Component {
       location: '',
       time: ''
     });
+    this.props.addFlashMessage({
+      type: 'succcess',
+      text: 'You have successfully created an event'
+    });
   };
 
   onChange = event => {
@@ -58,9 +63,8 @@ export class EventFormContainer extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log('events', state);
   return { user: state.users, event: state.events };
 };
-const mapDispatchToProps = { createEvent };
+const mapDispatchToProps = { createEvent, addFlashMessage };
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventFormContainer);

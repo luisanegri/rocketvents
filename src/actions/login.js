@@ -4,12 +4,12 @@ export const LOGIN = 'LOGIN';
 const baseUrl = 'https://warm-sierra-46859.herokuapp.com';
 
 function loginSuccess(user) {
-  console.log(user, 'user');
   return {
     type: LOGIN,
     payload: user
   };
 }
+
 export const login = (email, password) => dispatch => {
   request
     .post(`${baseUrl}/login`)
