@@ -16,12 +16,12 @@ The user can Sign Up and Log In to create events. The event should include infor
 * Create Event
 * List of events
 * More info about a specific event
+* Responsive
 
 ## TODO
 
 * Add comment component to event info page
 * Hide links on navigation for logged in users
-* Make it responsive
 
 ## Technologies Used
 
