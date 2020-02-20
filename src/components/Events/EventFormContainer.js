@@ -36,10 +36,10 @@ export class EventFormContainer extends Component {
       location: '',
       time: ''
     });
-    this.props.addFlashMessage({
-      type: 'succcess',
-      text: 'You have successfully created an event'
-    });
+    // this.props.addFlashMessage({
+    //   type: 'succcess',
+    //   text: 'You have successfully created an event'
+    // });
   };
 
   onChange = event => {
