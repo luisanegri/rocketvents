@@ -21,7 +21,7 @@ The user can Sign Up and Log In to create events. The event should include infor
 ## TODO
 
 * Add comment component to event info page
-* Hide links on navigation for logged in users
+* Logout
 
 ## Technologies Used
 
