@@ -56,6 +56,7 @@ export class EventFormContainer extends Component {
           onSubmit={this.onSubmit}
           value={this.state}
           user={this.props.user}
+          message={this.props.message}
         />
       </div>
     );
@@ -63,7 +64,8 @@ export class EventFormContainer extends Component {
 }
 
 const mapStateToProps = state => {
-  return { user: state.users, event: state.events };
+  console.log('event form', state);
+  return { user: state.users, event: state.events, message: state.messages };
 };
 const mapDispatchToProps = { createEvent, addFlashMessage };
 

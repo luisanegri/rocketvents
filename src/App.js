@@ -8,11 +8,13 @@ import EventFormContainer from './components/Events/EventFormContainer';
 import EventListContainer from './components/Events/EventListContainer';
 import EventDetailContainer from './components/Events/EventDetailContainer';
 import Home from './components/Home';
+import FlashMessagesList from './components/Messages/FlashMessagesList';
 
 function App() {
   return (
     <Fragment>
       <NavBar />
+      <FlashMessagesList />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/signup" component={SignUp} />
