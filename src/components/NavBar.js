@@ -6,8 +6,19 @@ import '../App.css';
 
 export class NavBar extends Component {
   render() {
-    // when set this.state.user result is null
-    const isLoggedIn = this.state;
+    const { jwt } = this.props.user;
+
+    const userLinks = (
+      <Link to="/signup">
+        <Button className="button-signup-nav">Log out</Button>
+      </Link>
+    );
+
+    const guestLinks = (
+      <Link to="/signup">
+        <Button className="button-signup-nav">Sign Up</Button>
+      </Link>
+    );
 
     return (
       <div className="navigation">
@@ -25,15 +36,7 @@ export class NavBar extends Component {
               <Nav.Link>
                 <Link to="/event/create">Create Event</Link>
               </Nav.Link>
-              {isLoggedIn ? (
-                <Link to="/signup">
-                  <Button className="button-signup-nav">Log out</Button>
-                </Link>
-              ) : (
-                <Link to="/signup">
-                  <Button className="button-signup-nav">Sign Up</Button>
-                </Link>
-              )}
+              {jwt ? userLinks : guestLinks}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -43,7 +46,6 @@ export class NavBar extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log('state', state);
   return {
     user: state.users
   };
