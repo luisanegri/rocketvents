@@ -28,15 +28,16 @@ body {
   margin-bottom: 50px;
 }
 
-.event-list a:hover {
+#event-list a:hover {
   text-decoration: none;
   color: black;
 }
 
-.event-list a {
+#event-list a {
   color: black !important;
 }
-.event-list a,
+
+#event-list a,
 .ticket-list a {
   color: white;
   font-size: 9.8px;
@@ -45,20 +46,20 @@ body {
   font-family: 'montserrat';
 }
 
-.event-list .row-btn {
+#event-list .row-btn {
   margin-top: 30px;
 }
 
-.event-list .card {
+#event-list .card {
   flex-direction: row;
   border: none;
   border-radius: 0;
-  width: 500px !important;
+  width: 500px;
   padding: 16px;
   background: #f8f7fa;
 }
 
-.event-list .card:hover {
+#event-list .card:hover {
   box-shadow: 0 7px 6px -4px #777;
 }
 
@@ -256,7 +257,6 @@ body {
 
 .home-wrapper .row-home-btn {
   margin: 0 auto;
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -315,7 +315,7 @@ body {
   width: 51%;
 }
 
-.event-list .row-btn {
+#event-list .row-btn {
   margin: 0 auto;
   width: 52%;
   margin-top: 40px;
@@ -365,16 +365,13 @@ body {
   display: flex;
 }
 
-.event-list .card-text-wrapper {
-}
-
-.event-list .card-img-top {
+#event-list .card-img-top {
   max-height: 130px;
   min-height: 130px;
   width: 100%;
 }
 
-.event-list .card-body {
+#event-list .card-body {
   padding: 0;
   /* border: 1px solid #ccc; */
 }
@@ -406,11 +403,11 @@ body {
   color: #ffc104;
 }
 
-.event-list .cards-col {
+#event-list .cards-col {
   margin-bottom: 30px;
 }
 
-.event-list .card-col-right {
+#event-list .card-col-right {
   padding-left: 0;
 }
 
@@ -472,4 +469,37 @@ body {
   border-color: transparent;
   background: #6400e4;
   margin-left: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  .home-wrapper .row-home-btn {
+    margin: unset;
+  }
+  .hero-inner h2:first-child {
+    line-height: 40px;
+    font-size: 29px;
+  }
+  .signup-wrapper .form-row,
+  .event-form {
+    width: unset;
+    padding: 0 16px;
+  }
+  .signup-wrapper p {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #event-list .card {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  #event-list .card {
+    width: 350px;
+  }
 }

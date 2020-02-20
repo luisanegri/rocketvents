@@ -8,13 +8,13 @@ export default function EventList(props) {
   }
   return (
     <Container>
-      <div className="wrapper event-list">
+      <div className="wrapper event-list" id="event-list">
         <h1>Events</h1>
         <Row>
           {props.events.map(event => (
             <Col md={6} className="cards-col">
               <Link to={`/event/${event.id}`}>
-                <Card style={{ width: '18rem' }}>
+                <Card>
                   <Row>
                     <Col md={6}>
                       <Card.Img variant="top" src={event.image} />
