@@ -12,7 +12,7 @@ The user can Sign Up and Log In to create events. The event should include infor
 ## Features
 
 * User Authentication
-* User Authorisation - only autheticated users can create events 
+* User Authorisation - only logged users can create events 
 * Create Event
 * List of events
 * More info about a specific event
@@ -22,6 +22,8 @@ The user can Sign Up and Log In to create events. The event should include infor
 
 * Add comment component to event info page
 * Logout
+* Loading message when fetching events
+* Message success/error on post request
 
 ## Technologies Used
 
