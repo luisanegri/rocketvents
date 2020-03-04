@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { createEvent } from '../../actions/events';
 import { addFlashMessage } from '../../actions/messages';
 import EventForm from './EventForm';
+import FlashMessagesList from '../Messages/FlashMessagesList';
 
 export class EventFormContainer extends Component {
   state = {
@@ -36,10 +37,10 @@ export class EventFormContainer extends Component {
       location: '',
       time: ''
     });
-    // this.props.addFlashMessage({
-    //   type: 'succcess',
-    //   text: 'You have successfully created an event'
-    // });
+    this.props.addFlashMessage({
+      type: 'succcess',
+      text: 'You have successfully created an event'
+    });
   };
 
   onChange = event => {
@@ -51,6 +52,7 @@ export class EventFormContainer extends Component {
   render() {
     return (
       <div>
+        <FlashMessagesList />
         <EventForm
           onChange={this.onChange}
           onSubmit={this.onSubmit}

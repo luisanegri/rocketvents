@@ -14,7 +14,6 @@ function App() {
   return (
     <Fragment>
       <NavBar />
-      <FlashMessagesList />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/signup" component={SignUp} />
